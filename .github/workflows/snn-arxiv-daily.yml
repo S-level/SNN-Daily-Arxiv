@@ -17,7 +17,9 @@ env:
 
   GITHUB_USER_NAME: SpikingChen
   GITHUB_USER_EMAIL: spikingchen@163.com
-  
+# 关键：显式声明写入权限，解决找不到设置的问题
+permissions:
+  contents: write
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
